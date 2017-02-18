@@ -6,4 +6,9 @@
     <string name="str_reader">XYZ 阅读器</string>
     <string name="str_news">最新闻</string>
     <string name="str_graduation">毕业设计</string>
+    <string name="str_movieClick">你点击了 热门电影</string>
+    <string name="str_shareClick">你点击了 股票雄鹰</string>
+    <string name="str_readerClick">你点击了 XYZ 阅读器</string>
+    <string name="str_newsClick">你点击了 最新闻</string>
+    <string name="str_graduationClick">你点击了 毕业设计</string>
 </resources>

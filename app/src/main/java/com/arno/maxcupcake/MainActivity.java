@@ -2,64 +2,55 @@ package com.arno.maxcupcake;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button btn_movie;
-    private Button btn_share;
-    private Button btn_reader;
-    private Button btn_news;
-    private Button btn_graduation;
+    private static Toast mToast = null;
+
+    public void showToast(int resId) {
+        if (mToast == null) {
+            mToast = Toast.makeText(getApplicationContext(), resId, Toast.LENGTH_SHORT);
+        } else {
+            mToast.setText(resId);
+        }
+        mToast.show();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_movie = (Button) findViewById(R.id.button_movie);
-        btn_share = (Button) findViewById(R.id.button_share);
-        btn_reader = (Button) findViewById(R.id.button_reader);
-        btn_news = (Button) findViewById(R.id.button_news);
-        btn_graduation = (Button) findViewById(R.id.button_graduation);
-
-        btn_movie.setOnClickListener(this);
-        btn_share.setOnClickListener(this);
-        btn_reader.setOnClickListener(this);
-        btn_news.setOnClickListener(this);
-        btn_graduation.setOnClickListener(this);
+        findViewById(R.id.button_movie).setOnClickListener(this);
+        findViewById(R.id.button_share).setOnClickListener(this);
+        findViewById(R.id.button_reader).setOnClickListener(this);
+        findViewById(R.id.button_news).setOnClickListener(this);
+        findViewById(R.id.button_graduation).setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button_movie:
-                Show_Toast("You have touch the Button Movie", false);
+                showToast(R.string.str_movieClick);
                 break;
             case R.id.button_share:
-                Show_Toast("You have touch the Button Share", false);
+                showToast(R.string.str_shareClick);
                 break;
             case R.id.button_reader:
-                Show_Toast("You have touch the Button Reader", false);
+                showToast(R.string.str_readerClick);
                 break;
             case R.id.button_news:
-                Show_Toast("You have touch the Button News", false);
+                showToast(R.string.str_newsClick);
                 break;
             case R.id.button_graduation:
-                Show_Toast("You have touch the Button Graduation", false);
+                showToast(R.string.str_graduationClick);
                 break;
 
             default:
                 break;
-        }
-    }
-
-    private void Show_Toast(String str, Boolean time) {
-        if (time) {
-            Toast.makeText(this, str, Toast.LENGTH_LONG).show();
-        } else {
-            Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
-
         }
     }
 }

@@ -7,5 +7,13 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <!--Custom Style-->
+    <style name="CustomButtonMain" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/udacityBlue</item>
+        <item name="android:textColor">@android:color/background_light</item>
+    </style>
 
 </resources>

@@ -18,58 +18,37 @@
 
     <Button
         android:id="@+id/button_movie"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/CustomButtonMain"
         android:layout_below="@id/textView"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp"
-        android:background="@color/udacityBlue"
-        android:text="@string/str_movie"
-        android:textColor="@android:color/background_light" />
+        android:text="@string/str_movie" />
 
     <Button
         android:id="@+id/button_share"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/CustomButtonMain"
         android:layout_below="@id/button_movie"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:background="@color/udacityBlue"
-        android:text="@string/str_share"
-        android:textColor="@android:color/background_light" />
+        android:text="@string/str_share" />
 
     <Button
         android:id="@+id/button_reader"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/CustomButtonMain"
         android:layout_below="@id/button_share"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:background="@color/udacityBlue"
-        android:text="@string/str_reader"
-        android:textColor="@android:color/background_light" />
+        android:text="@string/str_reader" />
 
     <Button
         android:id="@+id/button_news"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/CustomButtonMain"
         android:layout_below="@id/button_reader"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:background="@color/udacityBlue"
-        android:text="@string/str_news"
-        android:textColor="@android:color/background_light" />
+        android:text="@string/str_news" />
 
     <Button
         android:id="@+id/button_graduation"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        style="@style/CustomButtonMain"
         android:layout_below="@id/button_news"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="14dp"
-        android:background="@color/udacityBlue"
-        android:text="@string/str_graduation"
-        android:textColor="@android:color/background_light" />
-
+        android:text="@string/str_graduation" />
 
 </RelativeLayout>
